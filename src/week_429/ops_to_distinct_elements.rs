@@ -25,3 +25,26 @@ pub fn minimum_operations(nums: Vec<i32>) -> i32 {
 
     steps as i32
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn example_1() {
+        let steps = minimum_operations(vec![1,2,3,4,2,3,3,5,7]);
+        assert_eq!(steps, 2);
+    }
+
+    #[test]
+    fn example_2() {
+        let steps = minimum_operations(vec![4,5,6,4,4]);
+        assert_eq!(steps, 2);
+    }
+
+    #[test]
+    fn example_3() {
+        let steps = minimum_operations(vec![6,7,8,9]);
+        assert_eq!(steps, 0);
+    }
+}
