@@ -1,5 +1,6 @@
 use::std::collections::HashSet;
 
+#[allow(dead_code)]
 pub fn minimum_operations(nums: Vec<i32>) -> i32 {
     // reverse nums
     let mut nums = nums;
